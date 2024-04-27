@@ -3,8 +3,7 @@
 build:
 	
 	# install dependencies
-	go get github.com/aws/aws-lambda-go/events
-	go get github.com/aws/aws-lambda-go/lambda
+	go mod tidy
 
 	# build the binary with no debug information
 	env GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" -o bootstrap api/main.go

@@ -23,7 +23,6 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: provided.al2023
-  profile: apz
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
